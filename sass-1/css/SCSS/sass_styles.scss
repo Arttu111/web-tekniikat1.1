@@ -1,0 +1,73 @@
+$highlight-colour: pink;
+
+
+@mixin theme($theme: red){
+    
+    h1  {
+        color: $theme;
+
+    }
+    border-top-color: $theme;
+        .left ul li::before{
+            color: $theme;
+        }
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #efefef;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+header{
+    @include theme;
+}
+main {  
+    
+    border-top: 1px solid $highlight-colour;
+    @include theme ;
+}
+footer {
+    clear: both;
+    border-top: 1px solid $highlight-colour;
+    padding-top: 1rem;
+    span {
+        text-align: center;
+        width: 100%;
+        display: block;
+        color: $highlight-colour;
+    }
+    @include theme;
+}
+
+
+
+.left {
+    float: left;
+    width: 20%;
+    ul {
+        list-style: none; /* Remove default bullets */
+        li::before {
+            content: "\2022";
+            color: $highlight-colour;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            
+        }
+      }
+     
+}
+
+  
+
+.right {
+    float: left;
+    width: 80%;
+    padding: 1rem;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color:  #000;
+}
