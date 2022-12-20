@@ -1,0 +1,45 @@
+h1 {
+  color: blue;
+  border: 1px solid blue;
+  padding: 5px;
+  margin: 5px;
+}
+h1 .highlight {
+  color: yellow;
+  font-weight: bold;
+}
+
+.bordered {
+  color: pink;
+  border: 1px solid pink;
+  padding: 5px;
+  margin: 5px;
+}
+.bordered .highlight {
+  color: black;
+  font-weight: bold;
+}
+
+.green {
+  color: green;
+  border: 1px solid green;
+  padding: 5px;
+  margin: 5px;
+}
+.green .highlight {
+  color: red;
+  font-weight: bold;
+}
+
+.blue {
+  color: blue;
+  border: 1px solid blue;
+  padding: 5px;
+  margin: 5px;
+}
+.blue .highlight {
+  color: yellow;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,56 @@
+// Luodaan teema-mixin
+@mixin theme($color: blue){
+    
+    color: $color;
+    border: 1px solid $color;
+    padding: 5px;
+    margin: 5px;
+    .highlight{
+        // jos teeman väri on sininen
+        @if $color == blue{
+        // korostetaan keltaisella
+        color: yellow;
+        }
+         //jos teeman väri on pinkki 
+         @else if $color == pink{
+        
+            //korostetaan mustalla
+            color: black;
+        }        
+        @else{
+        //muuten 
+        //korostetaan punaisella
+
+        color: red;
+        }
+        font-weight: bold;
+    }
+    
+}
+
+
+
+
+
+// Luodaan muuttuja korostusvärille
+$highlight: pink;
+
+
+h1{
+    @include theme;
+}
+
+.bordered{
+  @include theme($color: $highlight);
+}
+
+    
+
+.green{
+    @include theme($color: green);
+}
+
+
+.blue{
+    @include theme();
+}
