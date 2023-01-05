@@ -1,0 +1,122 @@
+/*body background color*/
+body {
+    background-color: #8EBDBA;
+    font-family: 'Roboto', sans-serif;
+    font-weight:800;
+   
+}
+
+
+/*nav bar background color*/
+
+.navbar{
+    background-color: #5E7D7B;
+}
+
+.nav-link {
+    color: rgb(255, 255, 255)
+}
+
+
+.container {
+height: 150px;
+
+
+}
+#textContainer{
+    display: none;
+}
+
+#textContainer.visible{
+    display: block;
+}
+
+.container b{
+font-size: 1.5em;
+}
+
+.container p{
+    font-size: 1.2em;
+}
+
+#accordionExample{
+    width: 50%;
+    margin: 0 auto;
+   margin-top: 10px;
+    display: none;
+    
+}
+#accordionExample.visible{
+    display: block;
+}
+
+
+
+#next{
+   border-radius: 10px;
+   border: 2px solid black;
+   text-align: center;
+   
+}
+
+/*first "start" button css */
+#startButton{
+    text-align: center;
+    display: block;
+    font-size: 2em;
+    margin-top: 200px;
+}
+#startButton.remove{
+    display: none;
+}
+
+
+/*result button css*/
+#resultButton{
+    text-align: end;
+    margin-right: 300px;
+    display: none;
+}
+
+#resultButton.visible{
+    display: block;
+
+}
+
+
+
+
+/*result div css */
+#resultDiv{
+    display: none;
+    margin-left: 100px;
+    margin-top: 100px;
+    font-size: 1.3em;
+
+}
+#resultDiv.visible{
+    display: block;
+
+}
+/*refresh button*/
+#refreshPage{
+    text-align: center;
+    
+    
+    
+}
+/*google fonts icons*/
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+
+
+  #credit{
+    position: fixed;
+    bottom: 0;
+    
+  }
